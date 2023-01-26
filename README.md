@@ -6,33 +6,29 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
-Import pandas as pd.
+Use open function to open the file in which we want to copy from and access it in read mode.
 ### Step 2: 
- Read the CSV file using read_csv method.
+Read the file and store in a variable.
 ### Step 3: 
-Use head and tail method to get the required contents from the file.
+Now create a new file in which we want to paste the content using write access mode.
 ### Step 4:  
-Use len() method to get the number of rows and columns.
+Use write function to copy the read file that has been stored in the variable.
 ### Step 5: 
-Print the output.
+The content in the original file will be copied in the new file.
 ### Step 6: 
-End program
+End the program.
 ## PROGRAM:
 ```
 Developed by:sirisha onteddu
 Ref.no:22003264
-
-import pandas as pd
-f=pd.read_csv("/content/nba (2).csv")
-print(f.head(10))
-print(f.tail())
-print('Row:',len(f.axes[0]))
-print('Col:',len(f.axes[1]))
+with open("copy.txt", "r") as firstfile:
+    with open("text.txt", "a") as secondfile:
+        for line in firstfile:
+            secondfile.write(line)
 ```
 ### OUTPUT:
 
-![image](https://user-images.githubusercontent.com/119389139/214853306-83530998-9102-48c7-a501-d52c57e4a110.png)
-
+![image](https://user-images.githubusercontent.com/119389139/214864276-1ca8bb2d-0809-4f10-bed9-f2ff93681119.png)
 
 ## RESULT:
 Thus the program is written to copy the contents from one file to another file.

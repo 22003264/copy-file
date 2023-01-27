@@ -21,14 +21,15 @@ End the program.
 ```
 Developed by:sirisha onteddu
 Ref.no:22003264
-with open("copy.txt", "r") as firstfile:
-    with open("text.txt", "a") as secondfile:
+with open("sample1.txt", "r") as firstfile:
+    with open("sample2.txt", "a") as secondfile:
         for line in firstfile:
             secondfile.write(line)
 ```
 ### OUTPUT:
+![image](https://user-images.githubusercontent.com/119389139/215118151-7ccd79f8-e06c-43bd-877e-983d2d3ae3b4.png)
 
-![image](https://user-images.githubusercontent.com/119389139/214864276-1ca8bb2d-0809-4f10-bed9-f2ff93681119.png)
+![image](https://user-images.githubusercontent.com/119389139/215118371-26568a26-2f45-46fc-85d9-58466f26a728.png)
 
 ## RESULT:
 Thus the program is written to copy the contents from one file to another file.

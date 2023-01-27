@@ -26,9 +26,9 @@ with open("sample1.txt", "r") as firstfile:
         for line in firstfile:
             secondfile.write(line)
 ```
-### OUTPUT:
+### FILE:
 ![image](https://user-images.githubusercontent.com/119389139/215118151-7ccd79f8-e06c-43bd-877e-983d2d3ae3b4.png)
-
+### OUTPUT:
 ![image](https://user-images.githubusercontent.com/119389139/215118371-26568a26-2f45-46fc-85d9-58466f26a728.png)
 
 ## RESULT:
